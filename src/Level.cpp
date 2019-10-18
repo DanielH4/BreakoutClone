@@ -29,9 +29,9 @@ void Level::generate(std::vector<Engine::Object2D*>& gameObjects) {
                                                 glm::vec2{xPosPtr, yPosPtr},
                                                 glm::vec2{tileSize, tileSize}));
             }
-            xPosPtr += (tileSize*2) + 5;    //set x position for next tile
+            xPosPtr += (tileSize*2) + 4;    //set x position for next tile
         }
         xPosPtr = tileSize;                 //reset x position
-        yPosPtr += (tileSize*2) + 5;        //set y position for next row
+        yPosPtr += (tileSize*3) + 4;        //set y position for next row
     }
 }

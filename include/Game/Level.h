@@ -20,5 +20,5 @@ public:
     void generate(std::vector<Engine::Object2D*>& gameObjects);
 
 private:
-    std::array<std::array<TileType, 16>, 3> m_rows;
+    std::array<std::array<TileType, 15>, 3> m_rows;
 };

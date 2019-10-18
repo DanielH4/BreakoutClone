@@ -13,20 +13,12 @@
 #include <iostream>
 #include <bitset>
 #include <utility>
-#include <memory>
+#include <cstdlib>
 
 class Game {
 public:
     Game(const Engine::Window& window, const Engine::SpriteRenderer2D& renderer);
     Game(const Game &copy) = delete;
-
-    /*
-    //optimized: takes Object2D constructor parameter and constructs an object added to gameobject vector.
-    template <typename... T>
-    void addObject(T&&... t);
-    */
-
-    //void addObject(Engine::Object2D* object);
     void update(float deltatime);
     void render();
     GLFWwindow& getWindowGLFW();
